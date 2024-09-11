@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Bot Detection</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <h1>Sign-In</h1>
+            <form id="signInForm">
+                <div class="input-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div id="verification-box">
+                    <input type="checkbox" id="verified" disabled>
+                    <span id="verification-status">Verifying...</span>
+                </div>
+                <div class="submit-group">
+                    <button type="submit" id="submit-btn" disabled>Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="script3.js"></script>
+</body>
+</html>
