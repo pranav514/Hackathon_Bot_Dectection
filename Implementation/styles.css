@@ -1,0 +1,124 @@
+/* Base Styles */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://c4.wallpaperflare.com/wallpaper/944/995/821/abstract-backgrounds-minimalistic-website-wallpaper-preview.jpg");
+    background-size: cover;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+  }
+  
+  /* Login Container */
+  .login-container {
+    width: 100%;
+    max-width: 400px;
+    padding: 40px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(10px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .login-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Input Fields */
+  .login-container input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+  }
+  
+  .login-container input:focus {
+    border-color: #fc7e00;
+    outline: none;
+  }
+  
+  .login-container input:hover {
+    transform: scale(1.05);
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  /* Button Styles */
+  .login-container button {
+    width: 100%;
+    padding: 12px;
+    background-color: #fc7e00;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .login-container button:hover {
+    background-color: #e36900;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .login-container button:active {
+    transform: scale(0.98);
+  }
+  
+  /* Verification Status */
+  #verification-status {
+    margin-top: 10px;
+    font-size: 14px;
+    text-align: center;
+    color: #666;
+    font-weight: bold;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #490327;
+    color: #fff;
+    text-align: center;
+    padding: 40px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+  }
+  
+  footer:hover {
+    background-color: #600338;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .login-container {
+      padding: 30px;
+      width: 90%;
+    }
+  
+    footer {
+      padding: 20px;
+      font-size: 12px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .login-container {
+      padding: 20px;
+    }
+  
+    .login-container input, .login-container button {
+      font-size: 14px;
+    }
+  }
+  

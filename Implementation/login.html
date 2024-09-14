@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>Login Page with Bot Detection</title>
+  <style>
+    /* Basic styling for slider */
+    #slider-container {
+      display: none; /* Hidden by default */
+      margin-top: 20px;
+    }
+    #slider {
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <b><h1>Demo</h1></b>
+    <form id="signInForm" action="#" method="post">
+      <label for="username">Username:</label>
+      <input
+        type="text"
+        id="first"
+        name="first"
+        placeholder="username, email, or mobile"
+        required
+      />
+
+      <label for="password">Password:</label>
+      <input
+        type="password"
+        id="password"
+        name="password"
+        placeholder="enter valid password"
+        required
+      />
+
+      <!-- Hidden input for bot detection -->
+      <input
+        type="checkbox"
+        id="verified"
+        name="verified"
+        style="display: none"
+      />
+
+      <button type="submit" id="submit-btn" disabled>Login</button>
+
+      <!-- Verification message -->
+      <p id="verification-status">Verifying</p>
+
+      <!-- Slider for further verification -->
+      <div id="slider-container">
+        <p>Slide to verify you're not a bot:</p>
+        <input type="range" id="slider" min="0" max="100" value="0" />
+        <button type="button" id="confirm-btn">Confirm</button>
+      </div>
+    </form>
+  </div>
+
+  <footer>
+    <i>
+      &copy; 2024 Bot-Busters &ensp;•&ensp; All rights reserved &ensp;•&ensp;
+    </i>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+<!-- 
+const centroids = [
+  {
+    cluster: 0,
+    traveled_distance_pixel: 2800,
+    elapsed_time: 14.96,
+    straightness: 0.149552,
+    direction_of_movement: 4.0,
+    acceleration: 2300,
+    jerk: 130000,
+  },
+  {
+    cluster: 1,
+    traveled_distance_pixel: 250,
+    elapsed_time: 1.107,
+    straightness: 0.9,
+    direction_of_movement: 7.0,
+    acceleration: 700,
+    jerk: 4000,
+  },
+  {
+    cluster: 2,
+    traveled_distance_pixel: 220,
+    elapsed_time: 1.139,
+    straightness: 0.92,
+    direction_of_movement: 1.0,
+    acceleration: 600,
+    jerk: 3500,
+  },
+  {
+    cluster: 3,
+    traveled_distance_pixel: 740,
+    elapsed_time: 3.229,
+    straightness: 0.307046,
+    direction_of_movement: 5.0,
+    acceleration: 1000,
+    jerk: 11000,
+  },
+  {
+    cluster: 4,
+    traveled_distance_pixel: 2100,
+    elapsed_time: 1.716,
+    straightness: 0.62,
+    direction_of_movement: 4.0,
+    acceleration: 950000,
+    jerk: 94000000,
+  },
+  {
+    cluster: 5,
+    traveled_distance_pixel: 5100,
+    elapsed_time: 0.196,
+    straightness: 0.05,
+    direction_of_movement: 4.0,
+    acceleration: 330000,
+    jerk: 82000,
+  },
+  {
+    cluster: 6,
+    traveled_distance_pixel: 2600,
+    elapsed_time: 5.95,
+    straightness: 0.28,
+    direction_of_movement: 3.0,
+    acceleration: 390000,
+    jerk: 38000000,
+  },
+  {
+    cluster: 7,
+    traveled_distance_pixel: 930,
+    elapsed_time: 1.513,
+    straightness: 0.68,
+    direction_of_movement: 4.0,
+    acceleration: 90000,
+    jerk: 9000000,
+  },
+  {
+    cluster: 8,
+    traveled_distance_pixel: 310,
+    elapsed_time: 1.201,
+    straightness: 0.89,
+    direction_of_movement: 4.0,
+    acceleration: 500,
+    jerk: 3000,
+  },
+  {
+    cluster: 9,
+    traveled_distance_pixel: 630,
+    elapsed_time: 2.996,
+    straightness: 0.33,
+    direction_of_movement: 1.0,
+    acceleration: 800,
+    jerk: 9000,
+  },
+]; -->
